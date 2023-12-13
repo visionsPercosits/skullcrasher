@@ -47,8 +47,6 @@ app.post("*", async (req, res) => {
   return res.send("foi mal mano nao vai rolar request aq");
 });
 
-app.get("toenter")
-
 app.get("/", async (req, res, next) => {
   const crossData = await getUserActivity(crossID);
   const pedro7Data = await getUserActivity(pedro7ID);
