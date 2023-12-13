@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <meta name="theme-color" content="#000001" />
+    <meta
+      property="og:image"
+      content="https://cdn.discordapp.com/emojis/810918961918902292.gif?size=96&quality=lossless"
+    />
+    <link
+      rel="shortcut icon"
+      href="https://cdn.discordapp.com/emojis/810918961918902292.gif?size=96&quality=lossless"
+      type="image/gif"
+    />
+    <meta property="og:title" content="*:☆`" />
+    <meta property="og:description" content="skullcrasher.cc" />
+  </head>
+
+  <body>
+    <% profiles.forEach(profile => { %>
+    <div class="profile animate__animated animate__fadeInUp animate__fast">
+      <div class="banner">
+        <img
+          src="<%= profile.user.bannerURL({ size: 4096 }) || 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Black_flag.svg/1200px-Black_flag.svg.png' %>"
+          alt="banner"
+        />
+      </div>
+
+      <div class="pfp">
+        <a href="<%= profile.user.tag %>">
+          <img
+            src="<%= profile.user.displayAvatarURL({ dynamic: true, format: 'png', size: 4096 }) %>"
+            alt="<%= profile.user.username %>"
+          />
+        </a>
+      </div>
+
+      <div
+        class="profile__content animate__animated animate__fadeInUp animate__fast"
+      >
+        <h3>
+          <%= profile.user.globalName %><span class="profile__tag"
+            >#<%= profile.user.discriminator %></span
+          >
+
+          <img
+            src="https://raw.githubusercontent.com/worstbaby/badges/main/svg/nitro.svg"
+            width="20"
+            height="15"
+          />
+          <img
+            src="https://raw.githubusercontent.com/worstbaby/badges/main/svg/boost24month.svg"
+            width="18"
+          />
+        </h3>
+        <p>
+          <span class="aboutme__title">ABOUT ME</span> <br />
+          <br />
+          <span class="aboutme__text"><%= profile.user.aboutMe %></span>
+        </p>
+
+        <div class="socials animate__animated animate__fadeInUp animate__fast">
+          <a href="<%= profile.instagramLink %>" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+
+        <% if (profile.activity) { %>
+        <p>Atividade de Jogo: <%= profile.activity.name %></p>
+        <% } %>
+      </div>
+
+      <div
+        class="socials animate__animated animate__fadeInUp animate__fast"
+      ></div>
+
+      <div class="projects__button">
+        <a href="<%= profile.user.username %>">solo</a>
+      </div>
+    </div>
+    <% }) %>
+
+    <script>
+      var rev = "fwd";
+      function titlebar(val) {
+        var msg = "skullcrasher";
+        var res = " ";
+        var speed = 250;
+        var pos = val;
+        msg = "" + msg + "";
+        var le = msg.length;
+        if (rev == "fwd") {
+          if (pos < le) {
+            pos = pos + 1;
+            scroll = msg.substr(0, pos);
+            document.title = scroll;
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+          } else {
+            rev = "bwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+          }
+        } else {
+          if (pos > 0) {
+            pos = pos - 1;
+            var ale = le - pos;
+            scrol = msg.substr(ale, le);
+            document.title = scrol;
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+          } else {
+            rev = "fwd";
+            timer = window.setTimeout("titlebar(" + pos + ")", speed);
+          }
+        }
+      }
+      titlebar(0);
+    </script>
+  </body>
+</html>

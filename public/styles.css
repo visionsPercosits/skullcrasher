@@ -1,0 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background: black;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+.profile {
+  width: 340px;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.profilerep7 {
+  width: 340px;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.profilewzn {
+  width: 340px;
+  overflow: hidden;
+  border-radius: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+}
+
+.bannerwzn img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.banner img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.bannenando7 img {
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+}
+
+.pfp img {
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: 25px;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 6px solid #202124;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.pfpnando7 img {
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: 25px;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 6px solid #202124;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.pfpwzn img {
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-top: -75px;
+  display: block;
+  margin-left: 25px;
+  margin-right: auto;
+  border-radius: 100px;
+  border: 6px solid #202124;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.pfp img:hover {
+  transform: scale(1.1);
+}
+
+.pfpnando7 img:hover {
+  transform: scale(1.1);
+}
+
+.pfpwzn img:hover {
+  transform: scale(1.1);
+}
+
+.profile__content h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 7%;
+  margin-right: auto;
+  text-align: start;
+}
+
+.profile__contentnando7 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 7%;
+  margin-right: auto;
+  text-align: start;
+}
+
+.profile__contentwzn h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 7%;
+  margin-right: auto;
+  text-align: start;
+}
+
+.profile__tag {
+  color: #e1e1e6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.profile__tagnando7 {
+  color: #e1e1e6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.profile__tagwzn {
+  color: #e1e1e6;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.profile__content p {
+  color: #e1e1e6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 7%;
+  text-align: start;
+}
+
+.profile__contentnando7 p {
+  color: #e1e1e6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 7%;
+  text-align: start;
+}
+
+.profile__contentwzn p {
+  color: #e1e1e6;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 7%;
+  text-align: start;
+}
+
+.aboutme__title {
+  font-weight: 700;
+}
+
+.aboutme__titlenando7 {
+  font-weight: 700;
+}
+
+.aboutme__titlewzn {
+  font-weight: 700;
+}
+
+.socials {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.socialsnando7 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.socialswzn {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 20px;
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 0 14px;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.socialsnando7 a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 0 14px;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.socialswzn a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  padding: 0 14px;
+  transition-duration: 0.4s;
+  transition-property: transform;
+}
+
+.socials a:hover {
+  transform: scale(1.2);
+}
+
+.socialsnando7 a:hover {
+  transform: scale(1.2);
+}
+
+.socialswzn a:hover {
+  transform: scale(1.2);
+}
+
+.projects__button {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.projects__button a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 0 14px;
+  transition: ease-in-out 0.3s;
+}
+
+.projects__button a:hover {
+  font-size: 19px;
+}
+
+.projects__buttonnando7 {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.projects__buttonnando7 a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 0 14px;
+  transition: ease-in-out 0.3s;
+}
+
+.projects__buttonnando7 a:hover {
+  font-size: 19px;
+}
+
+.projects__buttonwzn {
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 12px;
+}
+
+.projects__buttonwzn a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: white;
+  color: black;
+  border-radius: 15px;
+  padding: 0 14px;
+  transition: ease-in-out 0.3s;
+}
+
+.projects__buttonwzn a:hover {
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 800px) {
+  .profilenando7 {
+    position: absolute;
+
+    margin-top: 300px;
+    margin-left: 10px;
+    margin-right: 100px;
+  }
+
+  .profilenando7 {
+    top: 50%;
+    left: 15px;
+  }
+
+  .profilewzn {
+    position: absolute;
+
+    margin-top: 300px;
+    margin-left: 10px;
+    margin-right: 100px;
+  }
+
+  .profilewzn {
+    top: 135%;
+    left: 15px;
+  }
+}
